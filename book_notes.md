@@ -270,6 +270,85 @@ is not used for a sequence but is used to iterate something for as long as a pre
  2) modulename.functionname() to call a function from the module or just call the function if you have imported it
 
  # Introduction to Algotithms. 
-   
+
+ Algorithms are defined as distinct steps a computer takes to solve a problem correctly in a finite amount of time . 
+
+ 
+ efficiency determines how fast a given problem can be solved by a given algorithm.
+ On the other hand a problems complexity is independnt of the algorith and referes to how fast a problem can be solved.  Some problems are known to have no efficient solutions, even though they may be solvable, it takes a loong time to solve them. These are refered to as  intractable problems.
+ When you meet an intractable prolem, sometimes rephrasing the problem presents a different solution to do the same task. 
+
+ ## Shortest path between pairs problem: 
+
+
+## Daily reflections: 
+### Sat Dec 18th 2021
+ Today I reviewed the video presentations of Algorithms and data structures. Went over hash tables and linked list, and did some exercises. for hash tables we did check for the first repeating item in the array. 
+ For linkied lists, it was creating an actual linked list. 
+ Hash tables take are objects in JS, and dictionaries in python and also maps .. They randomly assign memory to a key value pair using a hash function. Howvever they sometimes assighn the same memory location to more than one item. (which makes the hash table o(n) rather than o(1) for searching functionality)
+ I need to review more hash tables. but they are very commonly used. 
+ Linked lists are like a catapilar or a centipede. They consist of connected nodes, that have a head and a tail. Each node contains an object having  its own value, and a next -pointing to the subsequent values of the nodes that follow. 
+ We went over creating a linked list since it isnt built into Javascript(thou its built into java). We coded the constuctor, first, and then the head and tail, and then created methods for appending, prepending and inserting...The flow of creating the linked list class is interesting since it starts with the simplese setting  of a single object linked list, and builds on that... I get the idea of coding for each node, but im yet to see how the automation of 'next' values occur when you keep inserting nodes. 
+
+ ### Data Structures - YTVideo
+
+A programs data storage format. It is the collection of values, the format they are stored in , the relationships between the values, and  the operations applied on the data stored in the structure. 
+
+
+
+ ## Array: 
+
+
+
+ ## Linked List(cs videos): 
+
+ Linked lists are lists that have reference pointers to the next value, with a head and a tail connecting the values in between. 
+I will follow tutorial that uses Java Script to create Linked lists.(since linked lists are not in built in JS.)
+
+To understand linked lists, its is important to first understand object pointers. You can have an object 
+
+`const obj1 ={a:true}`
+You can reference that object with another name reference:
+
+`const obj2 = const obj1`
+
+in this case you dont have 2 objects in memory;; only one, that has 2 name references. 
+If you change object1, object 2 changes as well. However, if you delete object1, obj2 will still exist and will still points to that location in memory of where obj1 was. The location in memory was not deleted because the computer saw that that location was still in use; ie referenced by obj2 . However,as soon as that referecne is removed, Javascript does automatic memory management(garbage collection) and deleted that location memory space. (however some languages require manual garbage collection)
+
+Process of creating linked lists
+1) start with a tangible example: 
+ie 10-->5-->16
+
+think of each item in the list as a node. 
+Consider a node as a data container- and in this case, we can use an object. Each node contains information of 
+1) The value of the data point
+2) The reference to the next node. Because the next node also has a next value which is also a nnode, you will end up having a series of nested objects of nexts. Below is an example of a head node: 
+
+
+`
+head{
+   value: x,
+   next:{value:y,
+    next:{
+      value:z,
+      next{ value:null
+      }
+       }
+   }  
+}
+`
+
+To implement the datatype, we use a class with a constructor (the function that gets run at the very beginning when we create a linked list), 
+and a bunch of methods.
+
+Build the class from the simplest case scenario- which is a single node linked list, having just the head
+
+when adjusting the list, we just need to focus on the relevant nodes. 
+reference the previous values of the node, before reassigning a new value to the node. this is where you apply your knowledge of pointers/references. 
+
+Pay attention to what the values are as you change them 
+
+
+
 
 
