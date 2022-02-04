@@ -348,6 +348,49 @@ reference the previous values of the node, before reassigning a new value to the
 
 Pay attention to what the values are as you change them 
 
+nb- return ends the function that was called. 
+
+## Merge Sort exercise in Python. 
+
+Task: Create a merge sort algorithm and impliment it on different data structures. 
+
+The Merge sort Algorithm uses the notion of divide and conquer to fractally sort and merge numbers. 
+It makes use of the function recursively(Using a function within the same function) to do this. 
+Use the debug tool to follow the flow of the recurring function. So far with recursive functions, look out for the stopping condition,the return type and value, and which point it returns to, and the unfinished tasks that the function has to eventually return to . 
+
+### Merge sort exercise in Python with arrays vs linked lists. 
+
+## CS. Video stacks and queues
+
+Stacks: Can use either linked lists or arrays depending on your preference. 
+Arrays contain cache locality(making it easy to access their data since they are located close to each other in memory, while linke lists are more scattered in memory . Linked lists use more memory,due to the the pointers)
+
+Queues: Best to use linked lists. Arrays would need O(n) time operation to shift the indexes over after manipulating firstin first out. 
+
+
+## How does Java Script work 
+-asychronous vs synchronous. 
+-single threaded
+-non-blocking. 
+
+java script engine runs a memory heap(that stores variables and funtions) and a call stack:(that runs the js.script and then clears it in a first in last out. )
+Java script only has one call stack so we refer to it as single threaded- only one statement is executred at a time .  
+A stack overflow is when stack does not have enough memory to call the taskes. eg a recursive function with no stopping condition 
+   SetTimeout is  a function that allows js to run as if asynchronously.setTimeout is part of the web API's of js run time environment. (similara to the DOM), which goes through the callback queue and event loop )
+
+## Trees: 
+### Binary trees: 
+organized in a way that node contains two children,right and left nods. and values larger than node value goes right . values less goes left
+AVL trees and RedBlack trees are designed to ensure that the tree remains balanced
+### Heap treee
+Also referred to as priority Queue. Organizes top to bottom based on priority ie (larger values are above lower values) and arranges/adds values from left to right. 
+
+### Reflections.
+Using a while loop to travese is allows you to move along a tree while checking conditions. 
+
+
+
+
 
 
 
