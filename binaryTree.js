@@ -10,8 +10,7 @@ class BinaryTree {
     constructor() {
         this.root = null;
 
-        // this.rightChild={}
-        // this.leftChild={}
+
     }
     insert(value) {
         const node = new Node(value);
